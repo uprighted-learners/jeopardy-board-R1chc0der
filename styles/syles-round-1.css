@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    background-color: orange;
+    width: 90vw;
+    margin: 0 auto;
+    /* new stuff */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     */
+
+}
+
+h1, h2{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    
+
+}
+
+
+table, th, td {
+    border: 1px solid;
+    
+}
+
+table {
+    width: 100%;
+}
+td {
+    text-align: center;
+    
+
+}
+
+.userinput{
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.nextRound{
+    display: flex;
+    align-self: flex-end;
+    margin-right: 15%;
+}
+.nextRound{
+    float: right;
+}
+
+
+h3{
+    display: flex;
+    justify-content: end;
+
+}
+/* button{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* .grid-container{
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px 200px 200px ;
+
+    }
+
+    div {
+        background-color: blue;
+        border: 2px solid white;
+        align-items: center  ;
+        
+    
+    }
+    
+     */
