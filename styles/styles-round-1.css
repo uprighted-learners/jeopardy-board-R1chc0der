@@ -53,12 +53,23 @@ td {
     float: right;
 }
 
-
-h3{
+.scoreboard{
     display: flex;
-    justify-content: end;
-
+    justify-content: space-around;
 }
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 92%;
+    height: 2.5rem;  
+    text-align: center;          /* Footer height */
+  }
+
+
+
+
+
 /* button{
     display: flex;
     flex-direction: column;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/syles-round-1.css">
+    <link rel="stylesheet" href="styles/styles-round-1.css">
     <title>Jeopardy</title>
   </head>
   <body>
@@ -45,13 +45,15 @@
       <input type="text" value="your answer">
       <button class="btng" type="submit" name="btn1">GUESS</button> 
       <button class="btnp" type="submit" name="btn2">PASS</button>
-      
     </form>
   
-    <h3>Player 1 Score: 0</h3>
-    <h3>Player 2 Score: 0</h3>
+    <div class="scoreboard">
+      <h3 class="scoreboardp1">Player 1 Score: 0</h3>
+      <h3 class="scoreboardp2">Player 2 Score: 0</h3>
+    </div>
+    
 
-    <button class="nextRound"><h3>Next Round</h3></button>
+    <button class="nextRound" onclick="window.location.href='round-2.html'"><h3>Next Round</h3></button>
 
     <footer>
       Lets play! Round 1 &copy;

@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    background-color: orange;
+    width: 90vw;
+    margin: 0 auto;
+    /* new stuff */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     */
+
+}
+
+h1, h2{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    
+
+}
+
+
+table, th, td {
+    border: 1px solid;
+    
+}
+
+table {
+    width: 100%;
+}
+td {
+    text-align: center;
+    
+
+}
+
+.userinput{
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.nextRound{
+    display: flex;
+    align-self: flex-end;
+    margin-right: 15%;
+}
+.nextRound{
+    float: right;
+}
+
+.scoreboard{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 92%;
+    height: 2.5rem;  
+    text-align: center;          /* Footer height */
+  }
+

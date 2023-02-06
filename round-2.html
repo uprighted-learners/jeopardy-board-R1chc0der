@@ -5,11 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jeopardy</title>
-    <script src="./scripts/index.js" type="module"></script>
+    <link rel="stylesheet" href="styles/styles-round-2.css">
+    
   </head>
   <body>
     <h1>Second Round</h1>
     <!-- Do not change the script source. Allows import/export to work. -->
+
+    <table>
+      <tr>
+        <th>History</th> <th>Music</th> <th>Literature</th> <th>Sports</th> <th>Films</th> <th>Geography</th>
+      </tr>
+     
+      <tr>
+        <td>400</td> <td>400</td> <td>400</td> <td>400</td> <td>400</td> <td>400</td>
+      </tr>
+
+      <tr>
+        <td>600</td> <td>600</td> <td>600</td> <td>600</td> <td>600</td> <td>600</td>
+      </tr>
+      
+      <tr>
+        <td>800</td> <td>800</td> <td>800</td> <td>800</td> <td>800</td> <td>800</td>
+      </tr>
+      
+      <tr>
+        <td>1000</td> <td>1000</td> <td>1000</td> <td>1000</td> <td>1000</td> <td>1000</td>
+      </tr>
+      
+      <tr>
+        <td>2000</td> <td>2000</td> <td>2000</td> <td>2000</td> <td>2000</td> <td>2000</td>
+      </tr>
+
+    </table>
+
+      
+    <form class="userinput">
+      <input type="text" value="your answer">
+      <button class="btng" type="submit" name="btn1">GUESS</button> 
+      <button class="btnp" type="submit" name="btn2">PASS</button>
+      
+    </form>
+    
+    <div class="scoreboard" >
+      <h3>Player 1 Score: 0</h3>
+      <h3>Player 2 Score: 0</h3>
+    </div>
+    
+
+    <button class="nextRound" onclick="window.location.href='final-jeopardy.html'"><h3>Next Round</h3></button>
+
+    <footer>
+      Lets play! Round 2 &copy;
+    </footer>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="./scripts/index.js" type="module"></script>
   </body>
 </html>
