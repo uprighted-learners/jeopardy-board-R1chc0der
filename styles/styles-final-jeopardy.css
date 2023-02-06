@@ -7,10 +7,43 @@ body{
     width: 90vw;
     margin: 0 auto;
     /* new stuff */
-    /* display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-     */
+    
+}
+
+h1, h2, h3 {
+    background-color: blue;
+    color: white;
+    text-align: center;
+
+} 
+img{
+    width: 600px;
+    height: 450px;
 
 }
+.userinput{
+    margin-top: 100px;
+}
+
+footer{
+    margin-top: 100px;
+}
+
+/* .btnp{
+    display: flex;
+
+    justify-content: center;
+} */
+
+.btnp{
+
+margin-top: 20px;
+
+width: 100px;
+height: 100px;
+}
+
