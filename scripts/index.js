@@ -8,14 +8,19 @@
 let questionButtons = document.querySelectorAll("td button") 
     for (let questionButton of questionButtons ){
         questionButton.addEventListener("click", () =>{
-            log("button clicked")
+            console.log("button clicked")
             //alert("button works")
 
         })
     }
 
+    // p tag that generates the question after button click
+    let paragraphQuestion = document.getElementById("questionGenerator")
+    
+    paragraphQuestion.textContent("hello")
+
 // 
-let log = console.log
+
 //log("testing the log")
 
 function placeholderQuestions(){
@@ -23,17 +28,17 @@ function placeholderQuestions(){
     //.then(res => res.json())
     //.then(data => {
         let members = data.placeholderQuestions; 
-        //log(members);
+        //console.log(members);
 
         // Used a for/of loop to cycle through the array
         for(let member of members){
-          //  log(m); // logs each member object
-            log(member.category);
+          //  console.log(m); // logs each member object
+            console.log(member.category);
         }
 
 /*     })
     .catch(error => {
-        log(error);
+        console.log(error);
     } ) */
 
 }
