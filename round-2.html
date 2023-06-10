@@ -5,74 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jeopardy</title>
-    <link rel="stylesheet" href="styles/styles-round-2.css">
-    
+    <link rel="stylesheet" href="styles/styles-round-2.css" />
   </head>
   <body>
     <h1>Second Round</h1>
     <!-- Do not change the script source. Allows import/export to work. -->
 
+    <!--FIXED- element to indicate which players turn(place holder) functionality comment in lms -->
+
+    <h2>Player Turn</h2>
+
+    <!-- Table creating to display category -->
     <table>
       <tr>
-        <th>History</th> <th>Music</th> <th>Literature</th> <th>Sports</th> <th>Films</th> <th>Geography</th>
+        <th>History</th>
+        <th>Music</th>
+        <th>Literature</th>
+        <th>Sports</th>
+        <th>Films</th>
+        <th>Geography</th>
       </tr>
-     
+
       <tr>
-        <td><button>400</button></td> <td><button>400</button></td> <td><button>400</button></td> <td><button>400</button></td> <td><button>400</button></td> <td><button>400</button></td>
+        <td><button>400</button></td>
+        <td><button>400</button></td>
+        <td><button>400</button></td>
+        <td><button>400</button></td>
+        <td><button>400</button></td>
+        <td><button>400</button></td>
       </tr>
 
       <tr>
-        <td><button>600</button></td> <td><button>600</button></td> <td><button>600</button></td> <td><button>600</button></td> <td><button>600</button></td> <td><button>600</button></td>
-      </tr>
-      
-      <tr>
-        <td><button>800</button></td> <td><button>800</button></td> <td><button>800</button></td> <td><button>800</button></td> <td><button>800</button></td> <td><button>800</button></td>
-      </tr>
-      
-      <tr>
-        <td><button>1000</button></td> <td><button>1000</button></td> <td><button>1000</button></td> <td><button>1000</button></td> <td><button>1000</button></td> <td><button>1000</button></td>
-      </tr>
-      
-      <tr>
-        <td><button>2000</button></td> <td><button>2000</button></td> <td><button>2000</button></td> <td><button>2000</button></td> <td><button>2000</button></td> <td><button>2000</button></td>
+        <td><button>600</button></td>
+        <td><button>600</button></td>
+        <td><button>600</button></td>
+        <td><button>600</button></td>
+        <td><button>600</button></td>
+        <td><button>600</button></td>
       </tr>
 
+      <tr>
+        <td><button>800</button></td>
+        <td><button>800</button></td>
+        <td><button>800</button></td>
+        <td><button>800</button></td>
+        <td><button>800</button></td>
+        <td><button>800</button></td>
+      </tr>
+
+      <tr>
+        <td><button>1000</button></td>
+        <td><button>1000</button></td>
+        <td><button>1000</button></td>
+        <td><button>1000</button></td>
+        <td><button>1000</button></td>
+        <td><button>1000</button></td>
+      </tr>
+
+      <tr>
+        <td><button>2000</button></td>
+        <td><button>2000</button></td>
+        <td><button>2000</button></td>
+        <td><button>2000</button></td>
+        <td><button>2000</button></td>
+        <td><button>2000</button></td>
+      </tr>
     </table>
 
-      
+    <!-- Answer input with guess or pass button -->
     <form class="userinput">
-      <input type="text" value="your answer">
-      <button class="btng" type="submit" name="btn1">GUESS</button> 
+      <input type="text" value="your answer" />
+      <button class="btng" type="submit" name="btn1">GUESS</button>
       <button class="btnp" type="submit" name="btn2">PASS</button>
-      
     </form>
-    
-    <div class="scoreboard" >
+
+    <!-- scoreboard the keep record of points -->
+    <div class="scoreboard">
       <h3>Player 1 Score: 0</h3>
       <h3>Player 2 Score: 0</h3>
     </div>
-    
 
-    <button class="nextRound" onclick="window.location.href='final-jeopardy.html'"><h3>Next Round</h3></button>
+    <!-- Button for continue to next phase -->
+    <button
+      class="nextRound"
+      onclick="window.location.href='final-jeopardy.html'"
+    >
+      <h3>Next Round</h3>
+    </button>
 
-    <footer>
-      Lets play! Round 2 &copy;
-    </footer>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <footer>Lets play! Round 2 &copy;</footer>
 
     <script src="./scripts/index.js" type="module"></script>
   </body>

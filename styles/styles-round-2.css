@@ -1,82 +1,72 @@
-*{
-    box-sizing: border-box;
+/* Styling for the Round 2 page */
 
+* {
+  box-sizing: border-box;
 }
-body{
-    background-color: orange;
-    width: 90vw;
-    margin: 0 auto;
-    /* new stuff */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-     */
-
+body {
+  background-color: orange;
+  width: 90vw;
+  margin: 0 auto;
 }
 
-h1, h2{
-    background-color: blue;
-    color: white;
-    text-align: center;
-    
-
+h1,
+h2 {
+  background-color: blue;
+  color: white;
+  text-align: center;
 }
 
-
-table, th, td {
-    border: 1px solid;
-    
+table,
+th,
+td {
+  border: 1px solid;
 }
 
 table {
-    width: 100%;
-    height: 450px;
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-
+  width: 100%;
+  height: 450px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
 }
 
-td , th{
-    border: 5px solid blue;
-
-
+td,
+th {
+  border: 5px solid blue;
 }
-
 
 td {
-    text-align: center;
-    
-
+  text-align: center;
+}
+#turn {
+  color: red;
+}
+.userinput {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.userinput{
-    display:flex;
-    justify-content: center;
-    margin-top: 20px;
+.nextRound {
+  display: flex;
+  align-self: flex-end;
+  margin-right: 15%;
+}
+.nextRound {
+  float: right;
 }
 
-.nextRound{
-    display: flex;
-    align-self: flex-end;
-    margin-right: 15%;
-}
-.nextRound{
-    float: right;
-}
-
-.scoreboard{
-    display: flex;
-    justify-content: space-around;
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
 }
 
 footer {
-    position: absolute;
-    margin-top: 100px;
-    width: 92%;
-    height: 2.5rem;  
-    text-align: center;          /* Footer height */
-    background-color: rgb(0, 119, 247);
-    border: 1px solid black;
-    color: white;
-  }
+  position: absolute;
+  margin-top: 100px;
+  width: 92%;
+  height: 2.5rem;
+  text-align: center; /* Footer height */
+  background-color: rgb(0, 119, 247);
+  border: 1px solid black;
+  color: white;
+}

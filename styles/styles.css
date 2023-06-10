@@ -1,36 +1,22 @@
-
-body{
-    background-color: orange;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+body {
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-h1{
-    background-color: blue;
-    color: rgba(255, 255, 255, 0.876);
-    
-
+h1 {
+  background-color: blue;
+  color: rgba(255, 255, 255, 0.876);
 }
 
-a:link, a:visited {
-    background-color: blue;
-    color: white;
-    padding: 14px 25px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    text-decoration: none;
-    display: inline-block;
-
-  }
-
-  /* footer{
-    justify-content: end;
-
-  } */
-
-
-
-
-
-
+a:link,
+a:visited {
+  background-color: blue;
+  color: white;
+  padding: 14px 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-decoration: none;
+  display: inline-block;
+}

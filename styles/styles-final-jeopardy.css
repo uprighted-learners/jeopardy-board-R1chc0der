@@ -1,55 +1,47 @@
-*{
-    box-sizing: border-box;
+/* Styling for the Final Jeopardy page */
 
+* {
+  box-sizing: border-box;
 }
-body{
-    background-color: orange;
-    width: 90vw;
-    margin: 0 auto;
-    /* new stuff */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-h1, h2, h3 {
-    background-color: blue;
-    color: white;
-    text-align: center;
-
-} 
-img{
-    width: 600px;
-    height: 450px;
-
-}
-.userinput{
-    margin-top: 100px;
+body {
+  background-color: orange;
+  width: 90vw;
+  margin: 0 auto;
+  /* new stuff */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-footer{
-    margin-top: 100px;
-    
-    width: 80vh;
-    background-color: rgb(0, 119, 247);
-    border: 1px solid black;
-    text-align: center;
-    color: white;
+h1,
+h2,
+h3 {
+  background-color: blue;
+  color: white;
+  text-align: center;
+}
+img {
+  width: 600px;
+  height: 450px;
+}
+.userinput {
+  margin-top: 100px;
 }
 
-/* .btnp{
-    display: flex;
+footer {
+  margin-top: 100px;
 
-    justify-content: center;
-} */
-
-.btnp{
-
-margin-top: 20px;
-
-width: 100px;
-height: 100px;
+  width: 80vh;
+  background-color: rgb(0, 119, 247);
+  border: 1px solid black;
+  text-align: center;
+  color: white;
 }
 
+.btnp {
+  margin-top: 20px;
+
+  width: 100px;
+  height: 100px;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/styles-round-1.css">
+    <link rel="stylesheet" href="styles/styles-round-1.css" />
     <title>Jeopardy</title>
   </head>
   <body>
@@ -13,98 +13,84 @@
 
     <h2>Player Turn</h2>
 
+    <!-- Table creating to display categories -->
     <table>
       <tr>
-        <th>History</th> <th>Music</th> <th>Literature</th> <th>Sports</th> <th>Films</th> <th>Geography</th>
+        <th>History</th>
+        <th>Music</th>
+        <th>Literature</th>
+        <th>Sports</th>
+        <th>Films</th>
+        <th>Geography</th>
       </tr>
-     
+
       <tr>
-        <td><button class="history">200</button></td> <td><button class="">200</button></td> <td><button class="">200</button></td> <td><button class="">200</button></td> <td><button class="">200</button></td> <td><button class="">200</button></td>
+        <td><button class="history">200</button></td>
+        <td><button class="">200</button></td>
+        <td><button class="">200</button></td>
+        <td><button class="">200</button></td>
+        <td><button class="">200</button></td>
+        <td><button class="">200</button></td>
       </tr>
 
       <tr>
-        <td><button class="history">400</button></td> <td><button class="">400</button></td> <td><button class="">400</button></td> <td><button class="">400</button></td> <td><button class="">400</button></td> <td><button class="">400</button></td>
-      </tr>
-      
-      <tr>
-        <td><button class="history">600</button></td> <td><button class="">600</button></td> <td><button class="">600</button></td> <td><button class="">600</button></td> <td><button class="">600</button></td> <td><button class="">600</button></td>
-      </tr>
-      
-      <tr>
-        <td><button class="history">800</button></td> <td><button class="">800</button></td> <td><button class="">800</button></td> <td><button class="">800</button></td> <td><button class="">800</button></td> <td><button class="">800</button></td>
-      </tr>
-      
-      <tr>
-        <td><button class="history">1000</button></td> <td><button class="">1000</button></td> <td><button class="">1000</button></td> <td><button class="">1000</button></td> <td><button class="">1000</button></td> <td><button class="">1000</button></td>
+        <td><button class="history">400</button></td>
+        <td><button class="">400</button></td>
+        <td><button class="">400</button></td>
+        <td><button class="">400</button></td>
+        <td><button class="">400</button></td>
+        <td><button class="">400</button></td>
       </tr>
 
+      <tr>
+        <td><button class="history">600</button></td>
+        <td><button class="">600</button></td>
+        <td><button class="">600</button></td>
+        <td><button class="">600</button></td>
+        <td><button class="">600</button></td>
+        <td><button class="">600</button></td>
+      </tr>
+
+      <tr>
+        <td><button class="history">800</button></td>
+        <td><button class="">800</button></td>
+        <td><button class="">800</button></td>
+        <td><button class="">800</button></td>
+        <td><button class="">800</button></td>
+        <td><button class="">800</button></td>
+      </tr>
+
+      <tr>
+        <td><button class="history">1000</button></td>
+        <td><button class="">1000</button></td>
+        <td><button class="">1000</button></td>
+        <td><button class="">1000</button></td>
+        <td><button class="">1000</button></td>
+        <td><button class="">1000</button></td>
+      </tr>
     </table>
 
-      
     <form class="userinput">
-      <input type="text" value="your answer">
-      <button class="btnp" type="submit" name="btn1">GUESS</button> 
+      <input type="text" value="your answer" />
+      <button class="btnp" type="submit" name="btn1">GUESS</button>
       <button class="btnp" type="submit" name="btn2">PASS</button>
-     
     </form>
-      
 
-      <p id="questionGenerator">Question Goes there</p>
+    <!-- Place holder paragraph for fetching the question objects -->
+    <p id="questionGenerator">Question Goes there</p>
 
-  
+    <!-- scoreboard the keep record of points -->
     <div class="scoreboard">
       <h3 class="scoreboardp1">Player 1 Score: 0</h3>
       <h3 class="scoreboardp2">Player 2 Score: 0</h3>
     </div>
-    
 
-    <button class="nextRound" onclick="window.location.href='round-2.html'"><h3>Next Round</h3></button>
+    <!-- Button for continue to next phase -->
+    <button class="nextRound" onclick="window.location.href='round-2.html'">
+      <h3>Next Round</h3>
+    </button>
 
-    <footer>
-      Lets play! Round 1 &copy;
-    </footer>
-    
-
-    <!-- <div class="grid-container">
-      <div class="grid1">1</div>
-      <div class="grid2">2</div>
-      <div class="grid3">3</div>
-      <div class="grid4">4</div>
-      <div class="grid5">5</div>
-      <div class="grid6">6</div>
-      <div class="grid1">1</div>
-      <div class="grid2">2</div>
-      <div class="grid3">3</div>
-      <div class="grid4">4</div>
-      <div class="grid5">5</div>
-      <div class="grid6">6</div>
-      <div class="grid1">1</div>
-      <div class="grid2">2</div>
-      <div class="grid3">3</div>
-      <div class="grid4">4</div>
-      <div class="grid5">5</div>
-      <div class="grid6">6</div>
-      <div class="grid1">1</div>
-      <div class="grid2">2</div>
-      <div class="grid3">3</div>
-      <div class="grid4">4</div>
-      <div class="grid5">5</div>
-      <div class="grid6">6</div>
-      <div class="grid1">1</div>
-      <div class="grid2">2</div>
-      <div class="grid3">3</div>
-      <div class="grid4">4</div>
-      <div class="grid5">5</div>
-      <div class="grid6">6</div>
-      <div class="grid1">1</div>
-      <div class="grid2">2</div>
-      <div class="grid3">3</div>
-      <div class="grid4">4</div>
-      <div class="grid5">5</div>
-      <div class="grid6">6</div>
-    </div>
-   -->
-
+    <footer>Lets play! Round 1 &copy;</footer>
 
     <script src="./scripts/index.js" type="module"></script>
   </body>
