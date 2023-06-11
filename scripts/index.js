@@ -7,7 +7,7 @@
 let questionButtons = document.querySelectorAll("td button");
 for (let questionButton of questionButtons) {
   questionButton.addEventListener("click", () => {
-    console.log("Hi Lokai");
+    console.log("Button was pushed");
     //alert("button works")
   });
 }
@@ -40,25 +40,3 @@ function placeholderQuestions() {
     } ) */
 }
 placeholderQuestions();
-
-/* 
-function placeholderQuestions(){
-    const data = require("./questions.json") // passing our file location
-    //.then(res => res.json())
-    //.then(data => {
-        let members = data.placeholderQuestions; 
-        //log(members);
-
-        // Used a for/of loop to cycle through the array
-        for(let member of members){
-          //  log(m); // logs each member object
-            log(member.category);
-        }
-
-/*     })
-    .catch(error => {
-        log(error);
-    } ) */
-
-//}
-//placeholderQuestions();
