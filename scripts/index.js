@@ -1,42 +1,32 @@
+/* Goals */
 // click button - question from json object
 // question display via <p> tag via click
 // input box responses to question from <p>
 // guess button compares response from <p>/json object
 
-// get question in console.log then to get i a p tag
-let questionButtons = document.querySelectorAll("td button");
-for (let questionButton of questionButtons) {
-  questionButton.addEventListener("click", () => {
-    console.log("Button was pushed");
-    //alert("button works")
-  });
+//targeting nature buttons
+const elements = document.getElementsByClassName("nature");
+
+for (let i = 0; i < elements.length; i++) {
+  elements[i].addEventListener("click", natureQuestionsFunk, false);
 }
 
-// p tag that generates the question after button click
-let paragraphQuestion = document.getElementById("questionGenerator");
+//function for nature questions only using filter method of parse though the object
+function natureQuestionsFunk() {
+  fetch("../scripts/questions.json")
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      const response = data.placeholderQuestions.filter((questionObj) => {
+        return questionObj.category === "Nature";
+      });
+      // logic to get random Nature questions
+      const max = response.length - 1;
+      const min = 0;
+      const randomIndex = Math.floor(Math.random() * (max - min + 1) + min);
 
-paragraphQuestion.textContent("hello");
-
-//
-
-//log("testing the log")
-
-function placeholderQuestions() {
-  const data = require("./questions.json"); // passing our file location
-  //.then(res => res.json())
-  //.then(data => {
-  let members = data.placeholderQuestions;
-  //console.log(members);
-
-  // Used a for/of loop to cycle through the array
-  for (let member of members) {
-    //  console.log(m); // logs each member object
-    console.log(member.category);
-  }
-
-  /*     })
-    .catch(error => {
-        console.log(error);
-    } ) */
+      document.querySelector("#questionGenerator").innerText =
+        response[randomIndex].question;
+    });
 }
-placeholderQuestions();
